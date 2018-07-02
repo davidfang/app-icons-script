@@ -50,7 +50,7 @@ function main() {
 	//	save icons in PNG-24 using Save for Web
 	var saveForWeb = new ExportOptionsSaveForWeb();
 	saveForWeb.format = SaveDocumentType.PNG;
-	saveForWeb.PNG8 = false;
+	saveForWeb.PNG8 = true;
 	saveForWeb.transparency = true;
 
 	//	delete metadata
@@ -59,6 +59,8 @@ function main() {
 	var icons = [
 		{"name": "iTunesArtwork@2x", "size":1024},
 		{"name": "iTunesArtwork", "size":512},
+
+		{"name": "Icon-1024@1x", "size":1024},
 
 		{"name": "Icon-29", "size":29},
 		{"name": "Icon-29@2x", "size":58},
