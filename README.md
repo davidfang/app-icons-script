@@ -22,9 +22,10 @@ $ ./install.sh
 ## Usage
 
 1. Open Photoshop CC 2014 (may require restart if open during install)
-2. Select File > Scripts > Create-iOS-icons
+2. Select File > Scripts > Create-Ios-Android-icons
 3. Follow the dialog prompts
 4. :tada: :beer:
+5.  对应生成android和ios文件夹，将android文件夹下的放在对应的目录下即可
 
 ## Warning!
 

@@ -95,7 +95,14 @@ function main() {
 	];
 
 	var initialState = doc.activeHistoryState;
-
+	
+	// 创建FileSystemObject对象实例
+	var fso = Folder(destFolder + "/Assets.xcassets")
+    // 创建新文件夹
+    if(!fso.exists) fso.create()
+	var fso2 = Folder(destFolder + "/Assets.xcassets/AppIcon.appiconset")
+    if(!fso2.exists) fso2.create()
+    
 	for (var i = 0; i < icons.length; i++) {
 		var eachIcon = icons[i];
 
@@ -108,7 +115,7 @@ function main() {
 			destFileName = eachIcon.name;
 		}
 
-		doc.exportDocument(new File(destFolder + "/" + destFileName), ExportType.SAVEFORWEB, saveForWeb);
+		doc.exportDocument(new File(destFolder + "/Assets.xcassets/AppIcon.appiconset/" + destFileName), ExportType.SAVEFORWEB, saveForWeb);
 
 		// undo resize
 		doc.activeHistoryState = initialState;
